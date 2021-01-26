@@ -1,0 +1,38 @@
+/* ============HERO=============== */
+
+.hero-content {
+  width: 696px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.hero {
+  display: flex;
+  content: "";
+  max-width: 1600px;
+  height: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  text-align: center;
+  background-color: #2f303a;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imajes/hero/img.jpg");
+  background-size: cover;
+}
+
+.hero-title {
+  width: 696px;
+  font-style: normal;
+  font-weight: 900;
+  margin-top: auto;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 44px;
+  line-height: 1.363;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* ============ END HERO=============== */

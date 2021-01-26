@@ -1,0 +1,38 @@
+body {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: var(--text-decoration-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-family: Roboto;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  display: block;
+}
