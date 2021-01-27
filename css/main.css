@@ -46,15 +46,29 @@ img {
 }
 
 .container {
-  width: 1200px;
   padding: 0 15px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: space-between;
+  outline: 1px solid red;
 }
 
-.header .container {
-  display: flex;
+@media screen and (min-width: 450px) {
+  .container {
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
 }
 
 /* Кнопка */
@@ -546,40 +560,8 @@ img {
 
 /* ===========END HEADER=============== */
 /* ============HERO=============== */
-.hero-content {
-  width: 696px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
 .hero {
-  display: flex;
-  content: "";
-  max-width: 1600px;
-  height: 600px;
-  margin-right: auto;
-  margin-left: auto;
-  align-items: center;
-  text-align: center;
-  background-color: #2f303a;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imajes/hero/img.jpg");
-  background-size: cover;
-}
-
-.hero-title {
-  width: 696px;
-  font-style: normal;
-  font-weight: 900;
-  margin-top: auto;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 44px;
-  line-height: 1.363;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
+  background-image: url("../../imajes/hero/bg-mobile.jpg");
 }
 
 /* ============ END HERO=============== */
