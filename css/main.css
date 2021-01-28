@@ -273,7 +273,7 @@ img {
 }
 
 .modal-form-policy-check:checked + .modal-form-policy-label::before {
-  background-image: url("../img/iconcheck.svg");
+  background-image: url("../imajes/iconcheck.svg");
   background-repeat: no-repeat;
   background-position: left;
 }
@@ -593,13 +593,13 @@ img {
 /* ============HERO=============== */
 .container-hero {
   padding: 118px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/bg-mobile.jpg");
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imajes/hero/bg-mobile.jpg");
   background-size: cover;
 }
 
 @media screen and (min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .container-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/bg-mobile@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imajes/hero/bg-mobile@2x.jpg");
   }
 }
 
@@ -639,7 +639,7 @@ img {
   .container-hero {
     min-width: 768px;
     padding: 118px 60px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/bg-tablet.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imajes/hero/bg-tablet.jpg");
     background-size: cover;
   }
 }
@@ -648,7 +648,7 @@ img {
   screen and (min-resolution: 192dpi) and (min-width: 768px),
   screen and (min-resolution: 2dppx) and (min-width: 768px) {
   .container-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/bg-tablet@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imajes/hero/bg-tablet@2x.jpg");
   }
 }
 
@@ -656,7 +656,7 @@ img {
   .container-hero {
     min-width: 1200px;
     padding: 118px 60px;
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/img.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imajes/hero/img.jpg");
     background-size: cover;
   }
 }
@@ -665,7 +665,7 @@ img {
   screen and (min-resolution: 192dpi) and (min-width: 1200px),
   screen and (min-resolution: 2dppx) and (min-width: 1200px) {
   .container-hero {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/hero/img@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imajes/hero/img@2x.jpg");
   }
 }
 
@@ -721,19 +721,19 @@ img {
 }
 
 .icon-antenna::before {
-  background-image: url(../img/icons/antenna.svg);
+  background-image: url(../imajes/icons/antenna.svg);
 }
 
 .icon-clock::before {
-  background-image: url(../img/icons/clock.svg);
+  background-image: url(../imajes/icons/clock.svg);
 }
 
 .icon-diagram::before {
-  background-image: url(../img/icons/diagram.svg);
+  background-image: url(../imajes/icons/diagram.svg);
 }
 
 .icon-astronaut::before {
-  background-image: url(../img/icons/astronaut.svg);
+  background-image: url(../imajes/icons/astronaut.svg);
 }
 
 @media screen and (min-width: 768px) {
