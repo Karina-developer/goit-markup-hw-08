@@ -42,14 +42,16 @@
     background: #ffffff;
 
     @media screen and (min-width: 768px) {
+      margin-bottom: 30px;
       flex-basis: calc(100% / 2 - 30px);
     }
 
-    &:not(:last-child) {
-      margin-right: 30px;
+    &:nth-child(2n) {
+      margin-right: 0;
     }
 
     @media screen and (min-width: 1200px) {
+      margin-bottom: 0;
       padding-bottom: 30px;
       flex-basis: calc(100% / 4 - 30px);
     }

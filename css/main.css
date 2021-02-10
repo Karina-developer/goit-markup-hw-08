@@ -881,18 +881,20 @@ img {
 
 @media screen and (min-width: 768px) and (min-width: 768px) {
   .team-item {
+    margin-bottom: 30px;
     flex-basis: calc(100% / 2 - 30px);
   }
 }
 
 @media screen and (min-width: 768px) {
-  .team-item:not(:last-child) {
-    margin-right: 30px;
+  .team-item:nth-child(2n) {
+    margin-right: 0;
   }
 }
 
 @media screen and (min-width: 768px) and (min-width: 1200px) {
   .team-item {
+    margin-bottom: 0;
     padding-bottom: 30px;
     flex-basis: calc(100% / 4 - 30px);
   }
