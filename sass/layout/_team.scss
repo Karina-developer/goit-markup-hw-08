@@ -14,22 +14,6 @@
   color: var(--text-decoration-color);
 }
 
-.title-team {
-  min-width: 205px;
-  height: 33px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 28px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: auto;
-  margin-bottom: 30px;
-  line-height: 1.178;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-}
-
 .team-item {
   padding-bottom: 24px;
   width: 100%;
@@ -66,11 +50,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .title-team {
-    font-size: 36px;
-    line-height: 1.166;
-  }
-
   .team-description {
     min-width: 147px;
   }

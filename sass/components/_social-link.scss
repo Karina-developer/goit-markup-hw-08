@@ -26,7 +26,13 @@
 
 .social-team-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-team-list {
+    justify-content: space-between;
+  }
 }
 
 .social-list-icon {
