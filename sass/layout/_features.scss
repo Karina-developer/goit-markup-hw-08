@@ -68,15 +68,13 @@
     display: flex;
     flex-wrap: wrap;
   }
-}
 
-@media screen and (min-width: 768px) {
   .item {
     width: 354px;
     margin-right: 30px;
   }
 
-  .item:nth-last-child(-n + 3) {
+  .item:nth-last-child(-n + 2) {
     margin-bottom: 0;
   }
 
