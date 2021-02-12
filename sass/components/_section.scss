@@ -9,6 +9,7 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -20,5 +21,16 @@
   @media screen and (min-width: 1200px) {
     padding-bottom: 94px;
     padding-top: 94px;
+  }
+}
+
+.about-section {
+  display: none;
+}
+@media screen and (min-width: 1200px) {
+  .about-section {
+    display: block;
+    padding-top: 0;
+    padding-bottom: 94px;
   }
 }
