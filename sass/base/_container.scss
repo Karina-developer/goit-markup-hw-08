@@ -29,6 +29,29 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  .container-footer {
+    max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container-footer {
+    max-width: 768px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container-footer {
+    max-width: 1200px;
+    display: flex;
+  }
+}
+
 // .container {
 //   width: 1200px;
 //   padding: 0 15px;
