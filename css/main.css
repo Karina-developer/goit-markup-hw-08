@@ -1226,7 +1226,7 @@ img {
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
-    height: 463px;
+    height: 468px;
   }
 }
 
@@ -1432,15 +1432,25 @@ img {
   .footer-map {
     width: 232px;
   }
+  .address {
+    margin-bottom: 0;
+  }
   .footer-logotipe-link {
     width: 154px;
     height: 28px;
   }
   .footer-list-first-side {
     width: 355px;
+    margin-bottom: 0;
   }
   .footer-list-second-side {
     width: 355px;
+    margin-bottom: 0;
+  }
+  .footer-list-third-side {
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .footer-title {
     margin-bottom: 20px;
