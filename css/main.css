@@ -46,24 +46,31 @@ img {
 }
 
 .container {
+  width: 100%;
   padding: 0 15px;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .about-container {
     max-width: 1200px;
@@ -83,7 +90,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .container-footer {
-    max-width: 768px;
+    width: 768px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -91,8 +98,10 @@ img {
 
 @media screen and (min-width: 1200px) {
   .container-footer {
-    max-width: 1200px;
+    flex-wrap: nowrap;
     display: flex;
+    justify-content: space-between;
+    width: 1200px;
   }
 }
 
@@ -403,6 +412,9 @@ img {
   .social-team-list {
     justify-content: space-between;
   }
+  .social-list {
+    display: inline-flex;
+  }
 }
 
 .social-list-icon {
@@ -423,8 +435,8 @@ img {
   fill: #ffffff;
 }
 
-.social-list-item {
-  margin-left: 10px;
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 .title {
@@ -1226,6 +1238,8 @@ img {
 }
 
 .address {
+  text-align: center;
+  margin-bottom: 9px;
   margin-top: 20px;
 }
 
@@ -1261,11 +1275,6 @@ img {
 
 .footer-logotipe-link > .logotipe-part {
   color: #ffffff;
-}
-
-.address {
-  text-align: center;
-  margin-bottom: 9px;
 }
 
 .address-contact {
@@ -1326,6 +1335,7 @@ img {
 }
 
 .footer-title {
+  display: block;
   min-width: 146px;
   height: 16px;
   font-style: normal;
@@ -1427,13 +1437,12 @@ img {
     height: 28px;
   }
   .footer-list-first-side {
-    width: 354px;
+    width: 355px;
   }
   .footer-list-second-side {
     width: 355px;
   }
   .footer-title {
-    margin-left: 134px;
     margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -1451,6 +1460,14 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .address {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  .address-contact {
+    align-items: flex-start;
+  }
   .footer-map {
     width: 231px;
     margin-bottom: 9px;
@@ -1469,20 +1486,38 @@ img {
     width: 231px;
   }
   .footer-title {
+    text-align: left;
     min-width: 145px;
-    margin-left: 10px;
+  }
+  .footer-list-first-side {
+    text-align: left;
+    flex-direction: column;
+    width: 270px;
+    margin-bottom: 0;
+  }
+  .footer-list-second-side {
+    text-align: left;
+    width: 270px;
+    margin-bottom: 0;
   }
   .footer-list-third-side {
     width: 570px;
   }
-  .footer-form-input {
-    width: 370px;
-  }
   .button {
     margin-left: 12px;
   }
+  .footer-lead {
+    text-align: left;
+  }
   .footer-form {
     display: flex;
+  }
+  .footer-form-input {
+    width: 370px;
+  }
+  .footer-form .footer-form-btn {
+    margin-top: 0;
+    margin-left: 12px;
   }
 }
 /*# sourceMappingURL=main.css.map */

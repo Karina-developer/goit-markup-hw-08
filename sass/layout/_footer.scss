@@ -21,6 +21,8 @@
 }
 
 .address {
+  text-align: center;
+  margin-bottom: 9px;
   margin-top: 20px;
 }
 
@@ -56,11 +58,6 @@
 
 .footer-logotipe-link > .logotipe-part {
   color: #ffffff;
-}
-
-.address {
-  text-align: center;
-  margin-bottom: 9px;
 }
 
 .address-contact {
@@ -123,6 +120,7 @@
 }
 
 .footer-title {
+  display: block;
   min-width: 146px;
   height: 16px;
   font-style: normal;
@@ -226,7 +224,7 @@
   }
 
   .footer-list-first-side {
-    width: 354px;
+    width: 355px;
   }
 
   .footer-list-second-side {
@@ -234,7 +232,6 @@
   }
 
   .footer-title {
-    margin-left: 134px;
     margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
@@ -254,6 +251,16 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .address {
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+
+  .address-contact {
+    align-items: flex-start;
+  }
+
   .footer-map {
     width: 231px;
     margin-bottom: 9px;
@@ -275,24 +282,46 @@
   }
 
   .footer-title {
+    text-align: left;
     min-width: 145px;
-    margin-left: 10px;
+  }
+
+  .footer-list-first-side {
+    text-align: left;
+    flex-direction: column;
+    width: 270px;
+    margin-bottom: 0;
+  }
+
+  .footer-list-second-side {
+    text-align: left;
+    width: 270px;
+    margin-bottom: 0;
   }
 
   .footer-list-third-side {
     width: 570px;
   }
 
-  .footer-form-input {
-    width: 370px;
-  }
-
   .button {
     margin-left: 12px;
   }
 
+  .footer-lead {
+    text-align: left;
+  }
+
   .footer-form {
     display: flex;
+  }
+
+  .footer-form-input {
+    width: 370px;
+  }
+
+  .footer-form .footer-form-btn {
+    margin-top: 0;
+    margin-left: 12px;
   }
 }
 

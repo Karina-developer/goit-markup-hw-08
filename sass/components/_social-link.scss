@@ -34,6 +34,10 @@
   .social-team-list {
     justify-content: space-between;
   }
+
+  .social-list {
+    display: inline-flex;
+  }
 }
 
 .social-list-icon {
@@ -53,6 +57,6 @@
   }
 }
 
-.social-list-item {
-  margin-left: 10px;
+.social-list-item:not(:last-child) {
+  margin-right: 10px;
 }
