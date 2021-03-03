@@ -12,7 +12,6 @@
   margin-right: 93px;
   font-size: 26px;
   line-height: 1.192;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
 }
@@ -47,7 +46,6 @@
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.02em;
   color: var(--main-color);
@@ -82,7 +80,6 @@
   padding-top: 32px;
   padding-bottom: 32px;
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.172;
   letter-spacing: 0.02em;
   color: var(--main-color);
@@ -98,7 +95,7 @@
   }
 }
 
-.auth-list {
+.contact-list {
   display: flex;
 
   & {
@@ -108,7 +105,7 @@
   }
 }
 
-.auth-list-item {
+.contact-list-item {
   margin-right: 50px;
 
   &:last-child {
@@ -124,11 +121,11 @@
   display: flex;
   align-items: center;
   min-width: 135px;
+  font-style: normal;
   font-weight: 500;
   padding-top: 32px;
   padding-bottom: 32px;
   font-size: 14px;
-  font-style: normal;
   line-height: 1.142;
   letter-spacing: 0.02em;
   color: var(--text-decoration-color);
@@ -149,9 +146,8 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
   font-style: normal;
+  font-weight: 500;
   line-height: 1.172;
   letter-spacing: 0.02em;
   color: var(--text-decoration-color);

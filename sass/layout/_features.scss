@@ -2,13 +2,10 @@
 
 .features-title {
   min-width: 270px;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   margin-top: 0;
   margin-bottom: 10px;
-  font-size: 14px;
   line-height: 1.142;
-  letter-spacing: 0.03em;
   text-align: center;
   text-transform: uppercase;
   color: var(--main-color);
@@ -21,7 +18,6 @@
 .description {
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.02em;
   color: var(--text-decoration-color);
@@ -74,7 +70,7 @@
     margin-right: 30px;
   }
 
-  .item:nth-last-child(-n + 2) {
+  .item:nth-child(n + 3) {
     margin-bottom: 0;
   }
 
@@ -130,8 +126,7 @@
 
 // .features-title {
 //   min-width: 270px;
-//   font-style: normal;
-//   font-weight: bold;
+//   font-weight: 700;
 //   margin-top: 0;
 //   margin-bottom: 10px;
 //   font-size: 14px;
@@ -143,8 +138,7 @@
 
 // .description {
 //   width: 270px;
-//   font-style: normal;
-//   font-weight: normal;
+//   font-weight: 400;
 //   margin-top: 0;
 //   margin-bottom: 0;
 //   font-size: 14px;

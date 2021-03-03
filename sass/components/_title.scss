@@ -1,8 +1,6 @@
 .title {
   min-width: 205px;
-  height: 33px;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 28px;
   margin-left: auto;
   margin-right: auto;
@@ -10,14 +8,12 @@
   margin-bottom: 30px;
   line-height: 1.178;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-color);
 }
 
 @media screen and (min-width: 1200px) {
   .title {
     min-width: 264px;
-    height: 42px;
     font-size: 36px;
     line-height: 1.166;
   }
@@ -25,9 +21,7 @@
 
 .clients-title {
   min-width: 314px;
-  height: 33px;
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 28px;
   margin-left: auto;
   margin-right: auto;
@@ -35,16 +29,13 @@
   margin-bottom: 30px;
   line-height: 1.178;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--main-color);
 }
 
 @media screen and (min-width: 1200px) {
   .about-title {
     min-width: 376px;
-    height: 42px;
-    font-style: normal;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 36px;
     margin-left: auto;
     margin-right: auto;
@@ -52,12 +43,10 @@
     margin-bottom: 50px;
     line-height: 1.166;
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--main-color);
   }
   .clients-title {
     min-width: 390px;
-    height: 42px;
     font-size: 36px;
     line-height: 1.166;
     margin-bottom: 50px;

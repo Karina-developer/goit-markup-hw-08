@@ -24,8 +24,7 @@
 }
 
 .portfolio-title {
-  font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 18px;
   margin-top: 0;
   margin-bottom: 4px;
@@ -96,11 +95,9 @@
   width: 322px;
   height: 168px;
   text-align: left;
-  font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 18px;
   line-height: 1.555;
-  letter-spacing: 0.03em;
   color: #ffffff;
 }
 
@@ -116,7 +113,6 @@
   border-radius: 4px;
   padding: 6px 22px;
   line-height: 1.625;
-  letter-spacing: 0.03em;
   text-align: center;
   border: transparent;
   color: var(--main-color);
