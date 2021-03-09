@@ -337,25 +337,32 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.features-section {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .features-section {
+  .section {
     padding-top: 94px;
     padding-bottom: 94px;
   }
 }
 
+.features-section {
+  padding-top: 60px;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .features-section {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+}
+
 .team-section {
   padding-bottom: 60px;
-  padding-top: 60px;
+  padding-top: 30px;
   background-color: #f5f4fa;
 }
 
@@ -373,7 +380,7 @@ img {
 @media screen and (min-width: 1200px) {
   .about-section {
     display: block;
-    padding-top: 0;
+    padding-top: 47px;
     padding-bottom: 94px;
   }
 }
@@ -442,7 +449,6 @@ img {
 
 .title {
   min-width: 205px;
-  height: 33px;
   font-weight: 700;
   font-size: 28px;
   margin-left: auto;
@@ -457,7 +463,6 @@ img {
 @media screen and (min-width: 1200px) {
   .title {
     min-width: 264px;
-    height: 42px;
     font-size: 36px;
     line-height: 1.166;
   }
@@ -465,7 +470,6 @@ img {
 
 .clients-title {
   min-width: 314px;
-  height: 33px;
   font-weight: 700;
   font-size: 28px;
   margin-left: auto;
@@ -480,7 +484,6 @@ img {
 @media screen and (min-width: 1200px) {
   .about-title {
     min-width: 376px;
-    height: 42px;
     font-weight: 700;
     font-size: 36px;
     margin-left: auto;
@@ -493,7 +496,6 @@ img {
   }
   .clients-title {
     min-width: 390px;
-    height: 42px;
     font-size: 36px;
     line-height: 1.166;
     margin-bottom: 50px;
@@ -873,7 +875,6 @@ img {
   }
   .about-item {
     width: 370px;
-    height: 294px;
     flex-basis: calc(100% / 3 - 30px);
   }
   .about-item:not(:last-child) {
@@ -882,7 +883,6 @@ img {
   .about-content {
     position: absolute;
     width: 100%;
-    height: 70px;
     left: 0;
     right: 0;
     bottom: 0;
@@ -892,7 +892,6 @@ img {
   .label {
     position: absolute;
     width: 100%;
-    height: 16px;
     left: 0;
     top: 0;
     right: 0;
@@ -917,7 +916,6 @@ img {
 /* ===============TEAM==================== */
 .team-description {
   min-width: 130px;
-  height: 19px;
   font-weight: 400;
   font-size: 16px;
   margin-top: 10px;
@@ -979,7 +977,6 @@ img {
 
 .team-title {
   min-width: 151px;
-  height: 19px;
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 10px;
