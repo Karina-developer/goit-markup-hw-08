@@ -1,27 +1,40 @@
 /* ===============TEAM==================== */
 
-.team-description {
-  min-width: 130px;
-  font-weight: 400;
+.team-title {
+  min-width: 151px;
+  font-weight: 500;
   font-size: 16px;
-  margin-top: 10px;
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   line-height: 1.187;
   text-align: center;
-  color: var(--text-decoration-color);
+  color: var(--main-color);
+}
+
+.team-list-content-wrapper {
+  padding-top: var(--card-portfolio-gap);
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.team-description {
+  min-width: 130px;
+  @include font(16px, 400, 19px);
+  margin-top: 10px;
+  margin-bottom: 16px;
+  text-align: center;
 }
 
 .team-item {
   padding-bottom: 24px;
   width: 100%;
-  margin-bottom: 30px;
+  margin-bottom: var(--card-portfolio-gap);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  background: #ffffff;
-}
+  background: var(--background-color);
 
-.team-item:last-child {
-  margin-bottom: 0;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -33,7 +46,7 @@
     min-width: 76px;
   }
   .team-item {
-    margin-right: 30px;
+    margin-right: var(--card-portfolio-gap);
     flex-basis: calc(100% / 2 - 30px);
   }
 
@@ -54,30 +67,15 @@
   .team-list {
     flex-wrap: nowrap;
   }
+
   .team-item {
     margin-bottom: 0;
-    padding-bottom: 30px;
+    padding-bottom: var(--card-portfolio-gap);
     flex-basis: calc(100% / 4 - 30px);
   }
   .team-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: var(--card-portfolio-gap);
   }
-}
-
-.team-title {
-  min-width: 151px;
-  font-weight: 500;
-  font-size: 16px;
-  margin-bottom: 10px;
-  line-height: 1.187;
-  text-align: center;
-  color: var(--main-color);
-}
-
-.team-list-content-wrapper {
-  padding-top: 30px;
-  padding-left: 32px;
-  padding-right: 32px;
 }
 
 // .team-list {
@@ -127,7 +125,6 @@
 //   line-height: 1.187;
 //   text-align: center;
 //   letter-spacing: 0.03em;
-//   color: var(--text-decoration-color);
 // }
 
 // .team-list-content-wrapper {
