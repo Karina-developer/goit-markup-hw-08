@@ -2,7 +2,8 @@
 
 .features-title {
   min-width: 270px;
-  @include font(14px, 700, 16px);
+  font-weight: 700;
+  line-height: 1.142;
   margin-top: 0;
   margin-bottom: 10px;
   text-align: center;
