@@ -8,19 +8,17 @@
 .logotipe-link {
   width: 145px;
   font-family: Raleway;
-  font-weight: bold;
+  @include font(26px, 700, 31px);
   margin-right: 93px;
-  font-size: 26px;
-  line-height: 1.192;
+  letter-spacing: 0.03em;
   color: var(--accent-color);
-  text-decoration: none;
 }
+
 .logotipe-link > .logotipe-part {
   color: #000000;
 }
 
 .header {
-  background-color: #ffffff;
   border-bottom: 1px solid #ececec;
 }
 
@@ -33,10 +31,6 @@
 
   &:last-child {
     margin-right: 0;
-
-    &:last-child {
-      margin-right: 0;
-    }
   }
 }
 
@@ -45,8 +39,7 @@
   min-width: 49px;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  line-height: 1.172;
+  @include font(14px, 500, 16px);
   letter-spacing: 0.02em;
   color: var(--main-color);
 
@@ -57,7 +50,6 @@
     &:hover,
     &:focus {
       color: var(--accent-color);
-      outline: none;
     }
   }
 }
@@ -79,15 +71,13 @@
   min-width: 49px;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  line-height: 1.172;
+  @include font(14px, 500, 16px);
   letter-spacing: 0.02em;
   color: var(--main-color);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
-    outline: none;
 
     .navigation-list & {
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -97,12 +87,9 @@
 
 .contact-list {
   display: flex;
-
-  & {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-  }
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 .contact-list-item {
@@ -122,18 +109,14 @@
   align-items: center;
   min-width: 135px;
   font-style: normal;
-  font-weight: 500;
+  @include font(14px, 500, 16px);
   padding-top: 32px;
   padding-bottom: 32px;
-  font-size: 14px;
-  line-height: 1.142;
   letter-spacing: 0.02em;
-  color: var(--text-decoration-color);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
-    outline: none;
 
     .auth-list & {
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -146,16 +129,12 @@
   align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 1.172;
+  @include font(14px, 500, 16px);
   letter-spacing: 0.02em;
-  color: var(--text-decoration-color);
 
   &:hover,
   &:focus {
     color: var(--accent-color);
-    outline: none;
 
     .auth-list & {
       transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -173,7 +152,6 @@
   .tel-link:hover &,
   .tel-link:focus & {
     fill: var(--accent-color);
-    outline: none;
   }
 }
 
@@ -187,7 +165,6 @@
   .mailto-link:hover &,
   .mailto-link:focus & {
     fill: var(--accent-color);
-    outline: none;
   }
 }
 
