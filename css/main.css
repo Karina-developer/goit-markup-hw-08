@@ -73,10 +73,9 @@ img {
     max-width: 1200px;
   }
   .container-footer {
-    flex-wrap: nowrap;
     display: flex;
     justify-content: space-between;
-    width: 1200px;
+    flex-wrap: nowrap;
   }
 }
 
@@ -428,6 +427,24 @@ img {
   color: var(--main-color);
 }
 
+.features-title {
+  min-width: 270px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.143;
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+@media screen and (min-width: 768px) {
+  .features-title {
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients-title {
     font-size: 36px;
@@ -688,24 +705,6 @@ img {
 
 /* ============ END HERO=============== */
 /* =============FEATURES============ */
-.features-title {
-  min-width: 270px;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 1.143;
-  margin-top: 0;
-  margin-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  color: var(--main-color);
-}
-
-@media screen and (min-width: 768px) {
-  .features-title {
-    text-align: left;
-  }
-}
-
 .description {
   font-size: 14px;
   font-weight: 400;
@@ -1126,6 +1125,7 @@ img {
 .footer-map {
   width: 232px;
   font-style: normal;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.714;
   color: var(--background-color);
@@ -1144,6 +1144,7 @@ img {
 .footer-mailto-link {
   width: 232px;
   font-style: normal;
+  font-size: 14px;
   font-weight: 400;
   line-height: 1.714;
   color: rgba(255, 255, 255, 0.6);
@@ -1151,7 +1152,6 @@ img {
 
 .footer-mailto-link:hover, .footer-mailto-link:focus {
   color: var(--accent-color);
-  outline: none;
 }
 
 .footer-tel-link {
@@ -1165,7 +1165,6 @@ img {
 
 .footer-tel-link:hover, .footer-tel-link:focus {
   color: var(--accent-color);
-  outline: none;
 }
 
 .footer-address-list .footer-tel-link:hover, .footer-address-list .footer-tel-link:focus {
@@ -1187,22 +1186,24 @@ img {
   display: block;
   min-width: 146px;
   height: 16px;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 1.142;
+  line-height: 1.143;
   text-align: center;
   margin-bottom: 20px;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .footer-lead {
   display: block;
-  font-weight: bold;
-  line-height: 1.142;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.143;
   margin-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .footer-form-input {
@@ -1227,7 +1228,6 @@ img {
 }
 
 .button {
-  display: flex;
   align-items: center;
   width: 200px;
   height: 50px;
@@ -1236,11 +1236,11 @@ img {
   padding-right: 28px;
   padding-top: 10px;
   padding-bottom: 10px;
-  font-weight: bold;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
-  color: #ffffff;
+  color: var(--background-color);
   background: #2196f3;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -1264,11 +1264,11 @@ img {
   margin-left: 10px;
   width: 24px;
   height: 24px;
-  fill: #ffffff;
+  fill: var(--background-color);
 }
 
 .footer-list-icon {
-  fill: #ffffff;
+  fill: var(--background-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -1277,12 +1277,9 @@ img {
     height: 468px;
   }
   .footer-item {
-    margin-bottom: 30px;
+    margin-bottom: var(--card-portfolio-gap);
   }
-  .footer-map {
-    text-align: center;
-    width: 232px;
-  }
+  .footer-map,
   .footer-mailto-link,
   .footer-tel-link {
     text-align: center;
@@ -1310,7 +1307,7 @@ img {
     margin-bottom: 20px;
     text-align: center;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--background-color);
   }
   .footer-form-input {
     width: 482px;
@@ -1325,26 +1322,23 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer {
-    display: flex;
     height: 252px;
+  }
+  .footer-item {
+    margin-bottom: 20px;
   }
   .address-contact {
     align-items: flex-start;
   }
-  .footer-map {
-    text-align: left;
-    width: 231px;
-  }
   .footer-logotipe-link {
     height: 31px;
     font-size: 26px;
+    font-weight: 700;
     line-height: 1.192;
     text-align: left;
   }
-  .footer-mailto-link {
-    width: 231px;
-    text-align: left;
-  }
+  .footer-map,
+  .footer-mailto-link,
   .footer-tel-link {
     width: 231px;
     text-align: left;

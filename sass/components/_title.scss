@@ -18,6 +18,20 @@
   color: var(--main-color);
 }
 
+.features-title {
+  min-width: 270px;
+  @include font(14px, 700, 16px);
+  margin-top: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--main-color);
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .clients-title {
     font-size: 36px;
