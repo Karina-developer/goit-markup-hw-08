@@ -3,11 +3,11 @@
 .modal-btn {
   display: block;
   font-family: inherit;
+  min-width: 200px;
   @include font(16px, 700, 30px);
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 200px;
   letter-spacing: 0.06em;
   color: var(--background-color);
   background-color: var(--accent-color);

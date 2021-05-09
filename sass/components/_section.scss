@@ -3,38 +3,37 @@
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .features-section {
   padding-top: 60px;
   padding-bottom: var(--card-portfolio-gap);
-
-  @media screen and (min-width: 1200px) {
-    padding-top: 94px;
-    padding-bottom: 47px;
-  }
 }
 
 .team-section {
   padding-bottom: 60px;
   padding-top: var(--card-portfolio-gap);
   background-color: #f5f4fa;
-
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 94px;
-    padding-top: 94px;
-  }
 }
 
 .about-section {
   display: none;
 }
+
 @media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .features-section {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+
+  .team-section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
+
   .about-section {
     display: block;
     padding-top: 47px;

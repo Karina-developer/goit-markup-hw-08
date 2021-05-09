@@ -7,6 +7,7 @@
   }
 
   .about-img {
+    display: block;
     position: relative;
     overflow: hidden;
     margin-top: 0;
@@ -14,11 +15,10 @@
   }
 
   .about-item {
-    width: 370px;
     flex-basis: calc(100% / 3 - 30px);
 
     &:not(:last-child) {
-      margin-right: 30px;
+      margin-right: var(--card-portfolio-gap);
     }
   }
 
@@ -43,10 +43,6 @@
     text-align: center;
     text-transform: uppercase;
     color: var(--background-color);
-  }
-
-  .about-img {
-    display: block;
   }
 
   .about-img-wrap {

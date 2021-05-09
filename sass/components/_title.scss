@@ -8,13 +8,6 @@
   color: var(--main-color);
 }
 
-@media screen and (min-width: 1200px) {
-  .title {
-    font-size: 36px;
-    line-height: 1.166;
-  }
-}
-
 .clients-title {
   @include font(28px, 700, 33px);
   margin-left: auto;

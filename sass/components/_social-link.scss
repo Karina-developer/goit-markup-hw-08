@@ -12,7 +12,6 @@
   &:hover,
   &:focus {
     background-color: #2196f3;
-    outline: none;
 
     & .footer {
       background-color: rgba(255, 255, 255, 0.1);
@@ -30,16 +29,6 @@
   justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .social-team-list {
-    justify-content: space-between;
-  }
-
-  .social-list {
-    display: inline-flex;
-  }
-}
-
 .social-list-icon {
   width: 20px;
   height: 20px;
@@ -48,15 +37,24 @@
 
   .social-list-link:hover &,
   .social-list-link:focus & {
-    fill: #ffffff;
-    outline: none;
+    fill: var(--background-color);
 
     & .footer {
-      fill: #ffffff;
+      fill: var(--background-color);
     }
   }
 }
 
 .social-list-item:not(:last-child) {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-team-list {
+    justify-content: space-between;
+  }
+
+  .social-list {
+    display: inline-flex;
+  }
 }

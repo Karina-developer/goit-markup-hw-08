@@ -43,7 +43,6 @@ ul {
 
 img {
   display: block;
-  max-width: 100%;
   height: auto;
 }
 
@@ -63,15 +62,6 @@ img {
   .container {
     max-width: 768px;
   }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
-@media screen and (min-width: 768px) {
   .container-footer {
     display: flex;
     flex-wrap: wrap;
@@ -79,6 +69,9 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
   .container-footer {
     flex-wrap: nowrap;
     display: flex;
@@ -91,13 +84,13 @@ img {
 .modal-btn {
   display: block;
   font-family: inherit;
+  min-width: 200px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
-  min-width: 200px;
   letter-spacing: 0.06em;
   color: var(--background-color);
   background-color: var(--accent-color);
@@ -316,23 +309,9 @@ img {
   padding-bottom: 60px;
 }
 
-@media screen and (min-width: 1200px) {
-  .section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-}
-
 .features-section {
   padding-top: 60px;
   padding-bottom: var(--card-portfolio-gap);
-}
-
-@media screen and (min-width: 1200px) {
-  .features-section {
-    padding-top: 94px;
-    padding-bottom: 47px;
-  }
 }
 
 .team-section {
@@ -341,18 +320,23 @@ img {
   background-color: #f5f4fa;
 }
 
-@media screen and (min-width: 1200px) {
-  .team-section {
-    padding-bottom: 94px;
-    padding-top: 94px;
-  }
-}
-
 .about-section {
   display: none;
 }
 
 @media screen and (min-width: 1200px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .features-section {
+    padding-top: 94px;
+    padding-bottom: 47px;
+  }
+  .team-section {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
   .about-section {
     display: block;
     padding-top: 47px;
@@ -374,7 +358,6 @@ img {
 
 .social-list-link:hover, .social-list-link:focus {
   background-color: #2196f3;
-  outline: none;
 }
 
 .social-list-link:hover .footer, .social-list-link:focus .footer {
@@ -391,15 +374,6 @@ img {
   justify-content: center;
 }
 
-@media screen and (min-width: 1200px) {
-  .social-team-list {
-    justify-content: space-between;
-  }
-  .social-list {
-    display: inline-flex;
-  }
-}
-
 .social-list-icon {
   width: 20px;
   height: 20px;
@@ -409,17 +383,25 @@ img {
 
 .social-list-link:hover .social-list-icon,
 .social-list-link:focus .social-list-icon {
-  fill: #ffffff;
-  outline: none;
+  fill: var(--background-color);
 }
 
 .social-list-link:hover .social-list-icon .footer,
 .social-list-link:focus .social-list-icon .footer {
-  fill: #ffffff;
+  fill: var(--background-color);
 }
 
 .social-list-item:not(:last-child) {
   margin-right: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .social-team-list {
+    justify-content: space-between;
+  }
+  .social-list {
+    display: inline-flex;
+  }
 }
 
 .title {
@@ -432,13 +414,6 @@ img {
   margin-bottom: 50px;
   text-align: center;
   color: var(--main-color);
-}
-
-@media screen and (min-width: 1200px) {
-  .title {
-    font-size: 36px;
-    line-height: 1.166;
-  }
 }
 
 .clients-title {
@@ -815,17 +790,17 @@ img {
     flex-wrap: wrap;
   }
   .about-img {
+    display: block;
     position: relative;
     overflow: hidden;
     margin-top: 0;
     margin-bottom: 0;
   }
   .about-item {
-    width: 370px;
     flex-basis: calc(100% / 3 - 30px);
   }
   .about-item:not(:last-child) {
-    margin-right: 30px;
+    margin-right: var(--card-portfolio-gap);
   }
   .about-content {
     position: absolute;
@@ -849,9 +824,6 @@ img {
     text-align: center;
     text-transform: uppercase;
     color: var(--background-color);
-  }
-  .about-img {
-    display: block;
   }
   .about-img-wrap {
     position: relative;
