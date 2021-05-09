@@ -756,7 +756,7 @@ img {
   line-height: 1.714;
   margin-top: 0;
   margin-bottom: 0;
-  letter-spacing: 0.02em;
+  color: var(--text-decoration-color);
 }
 
 .item::before {
@@ -1155,6 +1155,31 @@ img {
   background-color: #2f303a;
 }
 
+.footer-logotipe-link {
+  display: block;
+  width: 145px;
+  height: 31px;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.192;
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.footer-item {
+  margin-bottom: 20px;
+}
+
+.footer-item-address:not(:last-child) {
+  margin-bottom: 9px;
+}
+
+.footer-address-list .footer-mailto-link,
+.footer-address-list .footer-tel-link {
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 @media screen and (min-width: 768px) {
   .footer {
     display: flex;
@@ -1171,23 +1196,15 @@ img {
 
 .address {
   text-align: center;
-  margin-bottom: 9px;
-  margin-top: 20px;
 }
 
 .footer-map {
+  display: block;
   width: 232px;
-  margin-top: 0;
   font-style: normal;
   font-weight: 400;
-  margin-bottom: 8px;
   line-height: 1.714;
-  color: #ffffff;
-}
-
-.footer-list-first-side .footer-logotipe-link {
-  text-align: center;
-  margin-bottom: 20px;
+  color: var(--background-color);
 }
 
 .footer-logotipe-link {
@@ -1203,7 +1220,7 @@ img {
 }
 
 .footer-logotipe-link > .logotipe-part {
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 .address-contact {
@@ -1216,8 +1233,6 @@ img {
   width: 232px;
   font-style: normal;
   font-weight: 400;
-  margin-bottom: 8px;
-  margin-top: 8px;
   line-height: 1.714;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1235,7 +1250,8 @@ img {
   display: block;
   width: 232px;
   font-style: normal;
-  font-weight: 400;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 1.714;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1351,9 +1367,6 @@ img {
   .footer-map {
     width: 232px;
   }
-  .address {
-    margin-bottom: 0;
-  }
   .footer-logotipe-link {
     width: 154px;
     height: 28px;
@@ -1391,15 +1404,12 @@ img {
 @media screen and (min-width: 1200px) {
   .address {
     text-align: left;
-    margin-top: 20px;
-    margin-bottom: 0;
   }
   .address-contact {
     align-items: flex-start;
   }
   .footer-map {
     width: 231px;
-    margin-bottom: 9px;
   }
   .footer-logotipe-link {
     width: 145px;
@@ -1409,7 +1419,6 @@ img {
   }
   .footer-mailto-link {
     width: 231px;
-    margin-bottom: 9px;
   }
   .footer-tel-link {
     width: 231px;
@@ -1422,7 +1431,6 @@ img {
     text-align: left;
     flex-direction: column;
     width: 270px;
-    margin-bottom: 0;
   }
   .footer-list-second-side {
     text-align: left;
