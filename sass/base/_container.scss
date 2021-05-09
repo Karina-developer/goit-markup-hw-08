@@ -1,50 +1,29 @@
 .container {
-  width: 100%;
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .about-container {
-    max-width: 1200px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .container-footer {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container-footer {
-    width: 768px;
     display: flex;
     flex-wrap: wrap;
   }

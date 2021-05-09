@@ -44,54 +44,35 @@ ul {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .container {
-  width: 100%;
   padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .about-container {
-    max-width: 1200px;
-    padding: 0 15px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media screen and (min-width: 480px) {
-  .container-footer {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container-footer {
-    width: 768px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -977,7 +958,6 @@ img {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  width: 210px;
   height: 90px;
   border: 1px solid #afb1b8;
   box-sizing: border-box;
@@ -1003,9 +983,6 @@ img {
   .clients-item {
     flex-basis: calc(100% / 3 - 30px);
   }
-  .clients-link {
-    width: 226px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1014,10 +991,6 @@ img {
   }
   .clients-item {
     flex-basis: calc(100% / 6 - 30px);
-  }
-  .clients-link {
-    width: 170px;
-    height: 90px;
   }
 }
 
@@ -1157,8 +1130,6 @@ img {
 
 .footer-logotipe-link {
   display: block;
-  width: 145px;
-  height: 31px;
   font-family: Raleway;
   font-size: 26px;
   font-weight: 700;
@@ -1180,43 +1151,12 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (min-width: 768px) {
-  .footer {
-    display: flex;
-    height: 468px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .footer {
-    display: flex;
-    height: 252px;
-  }
-}
-
-.address {
-  text-align: center;
-}
-
 .footer-map {
-  display: block;
   width: 232px;
   font-style: normal;
   font-weight: 400;
   line-height: 1.714;
   color: var(--background-color);
-}
-
-.footer-logotipe-link {
-  width: 154px;
-  height: 28px;
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 1.166;
-  color: var(--accent-color);
-  text-decoration: none;
-  text-align: center;
 }
 
 .footer-logotipe-link > .logotipe-part {
@@ -1242,16 +1182,11 @@ img {
   outline: none;
 }
 
-.footer-address-list .footer-mailto-link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .footer-tel-link {
-  display: block;
   width: 232px;
   font-style: normal;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.714;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -1266,6 +1201,7 @@ img {
 }
 
 .footer-list-first-side {
+  display: block;
   text-align: center;
   margin-bottom: 60px;
 }
@@ -1364,12 +1300,24 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    height: 468px;
+  }
+  .footer-item {
+    margin-bottom: 30px;
+  }
   .footer-map {
+    text-align: center;
     width: 232px;
   }
+  .footer-mailto-link,
+  .footer-tel-link {
+    text-align: center;
+  }
   .footer-logotipe-link {
-    width: 154px;
     height: 28px;
+    text-align: center;
   }
   .footer-list-first-side {
     width: 355px;
@@ -1378,6 +1326,8 @@ img {
   .footer-list-second-side {
     width: 355px;
     margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
   }
   .footer-list-third-side {
     margin-top: 60px;
@@ -1402,26 +1352,30 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .address {
-    text-align: left;
+  .footer {
+    display: flex;
+    height: 252px;
   }
   .address-contact {
     align-items: flex-start;
   }
   .footer-map {
+    text-align: left;
     width: 231px;
   }
   .footer-logotipe-link {
-    width: 145px;
     height: 31px;
     font-size: 26px;
     line-height: 1.192;
+    text-align: left;
   }
   .footer-mailto-link {
     width: 231px;
+    text-align: left;
   }
   .footer-tel-link {
     width: 231px;
+    text-align: left;
   }
   .footer-title {
     text-align: left;
@@ -1435,11 +1389,11 @@ img {
   .footer-list-second-side {
     text-align: left;
     width: 270px;
-    margin-bottom: 0;
   }
   .footer-list-third-side {
     margin-top: 0;
     width: 570px;
+    margin-right: 0;
   }
   .button {
     margin-left: 12px;
