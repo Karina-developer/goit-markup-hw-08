@@ -2,8 +2,7 @@
 
 .team-title {
   min-width: 151px;
-  font-weight: 500;
-  font-size: 16px;
+  @include font(16px, 500, 19px);
   margin-bottom: 10px;
   line-height: 1.187;
   text-align: center;

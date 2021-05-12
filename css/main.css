@@ -43,10 +43,12 @@ ul {
 
 img {
   display: block;
+  width: 100%;
   height: auto;
 }
 
 .container {
+  width: 100%;
   padding: 0 15px;
   margin-left: auto;
   margin-right: auto;
@@ -121,8 +123,8 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: #fff;
   padding: 40px;
 }
@@ -185,7 +187,7 @@ img {
   font-size: 12px;
   line-height: 1.167;
   letter-spacing: 0.01em;
-  color: #757575;
+  color: var(--text-decoration-color);
 }
 
 .modal-form-field:not(:last-child) {
@@ -194,10 +196,11 @@ img {
 
 .lead {
   font-size: 20px;
-  line-height: 1.15;
+  font-weight: 700;
+  line-height: 1.5;
   text-align: center;
   margin-bottom: 12px;
-  color: #212121;
+  color: var(--main-color);
 }
 
 .modal-form-icon {
@@ -246,7 +249,6 @@ img {
 
 .visually-hidden {
   position: absolute;
-  clip: rect(1px 1px 1px 1px);
   clip: rect(1px, 1px, 1px, 1px);
   padding: 0;
   border: 0;
@@ -256,10 +258,12 @@ img {
 }
 
 .modal-form-policy-label {
-  min-width: 400px;
-  height: 24px;
-  line-height: 1.714;
-  color: #757575;
+  min-width: 370px;
+  height: 14px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.167;
+  color: var(--text-decoration-color);
 }
 
 .modal-form-policy-label::before {
@@ -267,7 +271,7 @@ img {
   content: "";
   width: 16px;
   height: 15px;
-  margin-right: 8px;
+  margin-right: 4px;
   vertical-align: middle;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -280,16 +284,21 @@ img {
   background-position: left;
 }
 
+.link-policy {
+  color: var(--accent-color);
+  text-decoration-line: underline;
+}
+
 .modal-form-btn {
   width: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-top: var(--card-portfolio-gap);
-  background: #2196f3;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  background: var(--accent-color);
   color: var(--background-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
@@ -301,6 +310,27 @@ img {
 
 .modal-form-btn:hover, .modal-form-btn:focus {
   background-color: #188ce8;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+  .lead {
+    line-height: 1.15;
+  }
+  .modal-form-policy-label {
+    min-width: 400px;
+    height: 24px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.714;
+    color: var(--text-decoration-color);
+  }
+  .modal-form-policy-label::before {
+    margin-right: 8px;
+  }
 }
 
 .section {
@@ -631,6 +661,7 @@ img {
 /* ===========END HEADER=============== */
 /* ============HERO=============== */
 .container-hero {
+  width: 100%;
   padding: 118px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imajes/hero/bg-mobile.jpg");
   background-size: cover;
@@ -644,24 +675,22 @@ img {
 
 .hero-title {
   width: 100%;
+  font-size: 26px;
   font-weight: 900;
+  line-height: 1.615;
   margin-top: auto;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 26px;
-  line-height: 1.615;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-color);
 }
 
 @media screen and (min-width: 768px) {
   .hero-title {
     max-width: 360px;
-    font-size: 26px;
-    line-height: 1.615;
   }
 }
 
@@ -834,8 +863,9 @@ img {
 /* ===============TEAM==================== */
 .team-title {
   min-width: 151px;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
+  line-height: 1.188;
   margin-bottom: 10px;
   line-height: 1.187;
   text-align: center;

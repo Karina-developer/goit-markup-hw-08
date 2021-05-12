@@ -1,6 +1,7 @@
 /* ============HERO=============== */
 
 .container-hero {
+  width: 100%;
   padding: 118px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../imajes/hero/bg-mobile.jpg");
   background-size: cover;
@@ -14,22 +15,18 @@
 
 .hero-title {
   width: 100%;
-  font-weight: 900;
+  @include font(26px, 900, 42px);
   margin-top: auto;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 26px;
-  line-height: 1.615;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--background-color);
 
   @media screen and (min-width: 768px) {
     max-width: 360px;
-    font-size: 26px;
-    line-height: 1.615;
   }
   @media screen and (min-width: 1200px) {
     max-width: 696px;
