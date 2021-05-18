@@ -1,5 +1,27 @@
 /* Кнопка */
 
+.mobile-menu.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.mobile-btn {
+  display: block;
+  margin-left: auto;
+  fill: var(--main-color);
+  border: none;
+  background-color: transparent;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: var(--accent-color);
+  }
+}
+
 .modal-btn {
   display: block;
   font-family: inherit;
@@ -20,5 +42,43 @@
   &:focus {
     color: var(--background-color);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.open-menu {
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  border: none;
+  z-index: 999;
+  top: 10px;
+  right: 15px;
+
+  &:hover,
+  &:focus {
+    fill: var(--accent-color);
+  }
+}
+
+.close-menu {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-btn {
+    display: none;
+  }
+
+  .close-menu {
+    display: none;
   }
 }

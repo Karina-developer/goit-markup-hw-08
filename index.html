@@ -14,9 +14,13 @@
   <body class="page">
     <header class="header">
       <div class="container">
+        <a class="logotipe-link" href="./index.html">Web<span class="logotipe-part">Studio</span></a>
+        <button class="mobile-btn" mobile-menu-open type="button">
+          <svg class="menu-icon">
+            <use href="./imajes/sprite5.svg#icon-menu_24px"></use>
+          </svg>
+        </button>
         <nav class="navigation">
-          <a class="logotipe-link" href="./index.html">Web<span class="logotipe-part">Studio</span></a>
-
           <ul class="navigation-list">
             <li class="navigation-list-item">
               <a href="./" class="navigation-link current">Студия</a>
@@ -28,26 +32,26 @@
               <a href="" class="navigation-link">Контакты</a>
             </li>
           </ul>
-        </nav>
 
-        <ul class="contact-list">
-          <li class="contact-list-item">
-            <a class="mailto-link" href="mailto:info@devstudio.com"
-              ><svg class="mail-list-icon">
-                <use href="./imajes/sprite.svg#icon-mail"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li class="contact-list-item">
-            <a class="tel-link" href="tel:+380961111111"
-              ><svg class="phone-list-icon">
-                <use href="./imajes/sprite.svg#icon-phone"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
-          </li>
-        </ul>
+          <ul class="contact-list">
+            <li class="contact-list-item">
+              <a class="mailto-link" href="mailto:info@devstudio.com"
+                ><svg class="mail-list-icon">
+                  <use href="./imajes/sprite.svg#icon-mail"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contact-list-item">
+              <a class="tel-link" href="tel:+380961111111"
+                ><svg class="phone-list-icon">
+                  <use href="./imajes/sprite.svg#icon-phone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
 
@@ -531,6 +535,51 @@
         </form>
       </div>
     </div>
+
+    <div class="mobile-menu is-open" data-modal-menu>
+      <button type="button" mobile-menu-close class="close-menu">
+        <svg class="close-icon">
+          <use href="./imajes/sprite2.svg#icon-Vector"></use>
+        </svg>
+      </button>
+      <ul class="navigation-list">
+        <li class="navigation-list-item">
+          <a href="./" class="navigation-link current">Студия</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="./portfolio.html" class="navigation-link">Портфолио</a>
+        </li>
+        <li class="navigation-list-item">
+          <a href="" class="navigation-link">Контакты</a>
+        </li>
+      </ul>
+
+      <ul class="contact-list">
+        <li class="contact-list-item">
+          <a class="tel-link" href="tel:+380961111111"> +38 096 111 11 11 </a>
+        </li>
+        <li class="contact-list-item">
+          <a class="mailto-link" href="mailto:info@devstudio.com"> info@devstudio.com </a>
+        </li>
+      </ul>
+
+      <ul class="social-menu">
+        <li class="mobile-social-item">
+          <a href="" aria-label="Ссылка на Instagram" class="mobile-social-link"> Instagram </a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="" aria-label="Ссылка на Twitter" class="mobile-social-link"> Twitter </a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="" aria-label="Facebook" class="mobile-social-link"> Facebook </a>
+        </li>
+        <li class="mobile-social-item">
+          <a href="" aria-label="Ссылка на Linkedin" class="mobile-social-link"> LinkedIn </a>
+        </li>
+      </ul>
+    </div>
+
+    <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>
