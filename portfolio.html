@@ -82,7 +82,27 @@
             <li class="card portfolio-item">
               <a href="" class="section-link">
                 <div class="portfolio-img-wrap">
-                  <img class="portfolio-list-img" src="./imajes/portfolio/img1.jpg" width="370" height="294" alt="Ноутбук" />
+                  <source
+                    srcset="./imajes/portfolio/desk/port1-desk.webp 1x, ./imajes/portfolio/desk/port1-desk@2x.webp 2x"
+                    media="(min-width: 1200px)"
+                    type="imaje/webp"
+                  />
+                  <source
+                    srcset="./imajes/portfolio/desk/port1-desk.jpg 1x, ./imajes/portfolio/desk/port1-desk@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="./imajes/portfolio/tabl/port1-tabl.webp 1x, ./imajes/portfolio/tabl/port1-tabl@2x.webp 2x"
+                    media="(min-width: 768px)"
+                    type="imaje/webp"
+                  />
+                  <source
+                    srcset="./imajes/portfolio/tabl/port1-tabl.jpg 1x, ./imajes/portfolio/tabl/port1-tabl@2x.jpg 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source srcset="./imajes/portfolio/mob/port1-mob.webp 1x, ./imajes/portfolio/mob/port1-mob@2x.webp 2x" type="imaje/webp" />
+                  <img srcset="./imajes/portfolio/mob/port1-mob.jpg 1x, ./imajes/portfolio/mob/port1-mob@2x.jpg 2x" alt="Ноутбук" />
+
                   <div class="portfolio-content">
                     <p class="overlay">
                       Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак
