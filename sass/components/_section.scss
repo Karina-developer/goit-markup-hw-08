@@ -18,6 +18,12 @@
   display: none;
 }
 
+.portfolio-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background: var(--background-color);
+}
+
 @media screen and (min-width: 1200px) {
   .section {
     padding-top: 94px;
@@ -37,6 +43,11 @@
   .about-section {
     display: block;
     padding-top: 47px;
+    padding-bottom: 94px;
+  }
+
+  .portfolio-section {
+    padding-top: 94px;
     padding-bottom: 94px;
   }
 }

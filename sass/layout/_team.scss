@@ -35,6 +35,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+
+  .team-list-item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (min-width: 768px) {

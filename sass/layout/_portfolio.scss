@@ -17,20 +17,6 @@
   flex-wrap: wrap;
 }
 
-.portfolio-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
-  background: var(--background-color);
-}
-
-.portfolio-title {
-  @include font(18px, 700, 36px);
-  margin-top: 0;
-  margin-bottom: 4px;
-  letter-spacing: 0.06em;
-  color: var(--main-color);
-}
-
 .portfolio-description {
   margin-top: 0;
   margin-bottom: 0;
@@ -127,24 +113,12 @@
 
   .portfolio-box {
     display: flex;
-    flex-wrap: wrap;
     margin-top: calc(-1 * var(--card-portfolio-gap));
     margin-left: calc(-1 * var(--card-portfolio-gap));
   }
 
   .portfolio-title {
-    @include font(18px, 700, 36px);
-    margin-top: 0;
-    margin-bottom: 4px;
-    letter-spacing: 0.06em;
-    color: var(--main-color);
-  }
-
-  .portfolio-description {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 16px;
-    line-height: 1.875;
+    @include font(17px, 700, 36px);
   }
 
   .portfolio-list {
@@ -157,42 +131,10 @@
     margin-top: var(--card-portfolio-gap);
     margin-left: var(--card-portfolio-gap);
     flex-basis: calc(100% / 2 - 30px);
-    cursor: pointer;
-  }
-
-  .items-descriptions {
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    box-sizing: border-box;
-    background: var(--background-color);
-    border-right: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio-section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-  }
-
-  .portfolio-title {
-    @include font(18px, 700, 36px);
-    margin-top: 0;
-    margin-bottom: 4px;
-    letter-spacing: 0.06em;
-    color: var(--main-color);
-  }
-
-  .portfolio-description {
-    margin-top: 0;
-    margin-bottom: 0;
-    font-size: 16px;
-    line-height: 1.875;
-  }
 
   .portfolio-list {
     margin-bottom: 50px;
@@ -200,18 +142,6 @@
 
   .portfolio-item {
     flex-basis: calc(100% / 3 - 30px);
-  }
-
-  .items-descriptions {
-    padding-top: 20px;
-    padding-right: 24px;
-    padding-bottom: 20px;
-    padding-left: 24px;
-    box-sizing: border-box;
-    background: var(--background-color);
-    border-right: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
-    border-bottom: 1px solid #eeeeee;
   }
 }
 
