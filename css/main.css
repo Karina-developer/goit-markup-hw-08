@@ -56,6 +56,12 @@ img {
 
 .header .container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  min-width: 320px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
@@ -67,6 +73,10 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+  .header .container {
+    padding-top: 0;
+    padding-bottom: 0;
   }
   .container-footer {
     display: flex;
@@ -93,18 +103,9 @@ img {
 }
 
 .mobile-btn {
-  display: block;
-  margin-left: auto;
   fill: var(--main-color);
   border: none;
   background-color: transparent;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  cursor: pointer;
-}
-
-.mobile-btn:hover, .mobile-btn:focus {
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--accent-color);
 }
 
 .modal-btn {
@@ -618,8 +619,6 @@ img {
   font-weight: 700;
   line-height: 1.167;
   margin-right: 88px;
-  margin-top: 16px;
-  margin-bottom: 16px;
   color: var(--accent-color);
 }
 
@@ -732,10 +731,6 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .logotipe-link {
-    margin-top: 26px;
-    margin-bottom: 26px;
-  }
   .navigation {
     display: flex;
     align-items: center;

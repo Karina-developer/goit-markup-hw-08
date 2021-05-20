@@ -19,8 +19,6 @@
   font-family: Raleway;
   @include font(24px, 700, 28px);
   margin-right: 88px;
-  margin-top: 16px;
-  margin-bottom: 16px;
   color: var(--accent-color);
 }
 
@@ -126,11 +124,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .logotipe-link {
-    margin-top: 26px;
-    margin-bottom: 26px;
-  }
-
   .navigation {
     display: flex;
     align-items: center;
