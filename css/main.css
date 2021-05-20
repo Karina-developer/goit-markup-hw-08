@@ -141,6 +141,8 @@ img {
   z-index: 999;
   top: 10px;
   right: 15px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
 
 .open-menu:hover, .open-menu:focus {
@@ -157,6 +159,10 @@ img {
   border: none;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+}
+
+.close-menu:hover, .close-menu:focus {
+  fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
