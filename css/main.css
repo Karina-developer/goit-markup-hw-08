@@ -1248,10 +1248,6 @@ img {
   margin-bottom: 40px;
 }
 
-.portfolio-box {
-  flex-wrap: wrap;
-}
-
 .portfolio-description {
   margin-top: 0;
   margin-bottom: 0;
@@ -1350,6 +1346,7 @@ img {
   }
   .portfolio-box {
     display: flex;
+    flex-wrap: wrap;
     margin-top: calc(-1 * var(--card-portfolio-gap));
     margin-left: calc(-1 * var(--card-portfolio-gap));
   }
