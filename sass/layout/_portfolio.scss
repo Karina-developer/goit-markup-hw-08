@@ -89,7 +89,7 @@
   }
 
   .overlay {
-    @include font(14px, 400, 26px);
+    @include font(16px, 400, 26px);
     color: var(--background-color);
   }
 
