@@ -1293,7 +1293,7 @@ img {
   right: 0;
   top: 0;
   bottom: 0;
-  padding: 63px 24px;
+  padding: 24px;
   background: rgba(33, 150, 243, 0.9) 90%;
   opacity: 0;
   transition: 700ms;
@@ -1350,10 +1350,6 @@ img {
     margin-top: calc(-1 * var(--card-portfolio-gap));
     margin-left: calc(-1 * var(--card-portfolio-gap));
   }
-  .overlay {
-    width: 306px;
-    height: 196px;
-  }
   .portfolio-title {
     font-size: 17px;
     font-weight: 700;
@@ -1372,10 +1368,6 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .overlay {
-    width: 322px;
-    height: 140px;
-  }
   .portfolio-list {
     margin-bottom: 50px;
   }
