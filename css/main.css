@@ -1242,7 +1242,7 @@ img {
     right: 0;
     top: 0;
     bottom: 0;
-    padding: 14px;
+    padding: 24px;
     background: rgba(33, 150, 243, 0.9) 90%;
     opacity: 0;
     transition: 700ms;
