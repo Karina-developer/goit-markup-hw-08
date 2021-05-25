@@ -11,4 +11,8 @@
     mobileBtnClose.addEventListener("click", () => {
       mobileMenuRef.classList.toggle("is-open");
     });
+
+    function toggleModal () {
+      document.body.classList.toggle("modal-open")
+    }
   })();
